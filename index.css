@@ -1,0 +1,25 @@
+#table {
+    font-size: medium;
+    font-style: Times New Roman;
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin: 10px border
+}
+
+#table td,
+#table th {
+    border: 1px solid black;
+}
+
+.list {
+    font-size: large;
+}
+
+ul {
+    display: inline-block
+}
+
+.list1 {
+    font-size: large;
+    color: navy;
+}
