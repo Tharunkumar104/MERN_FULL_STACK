@@ -1,0 +1,71 @@
+.head {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: red
+}
+
+.new {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: blue;
+}
+
+.buttons {
+    button {
+        margin: 10px;
+        padding: 10px;
+        font-size: 20px;
+        background-color: rgb(239, 188, 139);
+        border: solid 2px black;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+        background-color: #7cefd1c1;
+        transform: scale(1.05);
+    }
+}
+
+.fp {
+    border: solid 3px grey;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px auto;
+    width: 70%;
+    height: 50%;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 100px rgba(0, 0, 0, 0.900);
+    background-color: lightblue;
+}
+
+.res {
+    border: solid 3px grey;
+    border-radius: 10px;
+    text-align: center;
+    padding: 5px;
+    margin: 5px auto;
+    width: 70%;
+    height: 50%;
+    box-shadow: 0 40px 100px rgba(0, 0, 0, 0.900);
+    font-size: 20px;
+    font-weight: bold;
+    color: navy;
+    margin-top: 100px;
+    background-color: lightblue;
+
+}
+
+.body {
+    background-color: rgb(239, 188, 139);
+}
+
+.computer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+}

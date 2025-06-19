@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Movies: Teddy & Tourist Family</title>
+    <meta charset="UTF-8" />
+    <style>
+        /* Reset and base styles */
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9e9e9;
+            overflow-x: hidden;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            padding: 25px 15px;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            width: 100%;
+            display: grid;
+            gap: 60px;
+        }
+
+        .movie-section {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: 400px 1fr;
+            /* fixed width for image */
+            gap: 25px;
+            align-items: stretch;
+            padding: 20px;
+        }
+
+        /* Image container */
+        .poster {
+            display: flex;
+            justify-content: center;
+            align-items: stretch;
+            /* stretch to fill grid row height */
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+            height: 300px;
+            /* fixed height */
+        }
+
+        .poster img {
+            display: block;
+            /* removes inline gap below image */
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* cover container fully */
+            border-radius: 8px;
+            vertical-align: top;
+            /* help remove bottom gap in some browsers */
+        }
+
+        /* Text container */
+        .details {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+
+        .details h2 {
+            font-size: 2.4rem;
+            color: #222;
+            margin-bottom: 18px;
+            font-weight: 700;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+
+        .info-block {
+            background: #fafafa;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+            font-size: 14px;
+            line-height: 1.5;
+            color: #444;
+            max-height: 250px;
+            overflow-y: auto;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 900px) {
+            .movie-section {
+                grid-template-columns: 1fr;
+                padding: 15px;
+            }
+
+            .details {
+                padding-left: 0;
+                margin-top: 15px;
+            }
+
+            .details h2 {
+                font-size: 1.8rem;
+                text-align: center;
+                margin-bottom: 15px;
+            }
+
+            .info-grid {
+                grid-template-columns: 1fr;
+                gap: 12px;
+            }
+
+            .info-block {
+                max-height: none;
+            }
+
+            .poster {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Teddy Movie -->
+        <section class="movie-section">
+            <div class="poster">
+                <img src="teddyu.webp" alt="Teddy Movie Poster" />
+            </div>
+            <div class="details">
+                <h2>Teddy (2023)</h2>
+                <div class="info-grid">
+                    <div class="info-block">
+                        <strong>Cast</strong><br><br>
+                        Yureni Noshika as Vihara<br>
+                        Madhushanka Nuwan as Kevin<br>
+                        Wayne White as Therapist<br>
+                    </div>
+                    <div class="info-block">
+                        <strong>Roles</strong><br><br>
+                        <em>Vihara</em>: A Sri Lankan woman confronting difficult memories.<br>
+                        <em>Kevin</em>: Central figure in Vihara's story.<br>
+                        <em>Therapist</em>: Guides Vihara through healing.<br>
+                    </div>
+                    <div class="info-block">
+                        <strong>Summary</strong><br><br>
+                        "Teddy" dives into trauma and healing, exploring fractured relationships through therapy
+                        sessions. It paints a raw and emotional picture of recovery and human connection.
+                    </div>
+                    <div class="info-block">
+                        <strong>Reviews</strong><br><br>
+                        Mixed feedback highlights strong performances and emotional depth but mentions some pacing and
+                        clarity issues.<br>
+                        <em>IMDb & Rotten Tomatoes</em>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tourist Family Movie -->
+        <section class="movie-section">
+            <div class="poster">
+                <img src="touristfamily.webp" alt="Tourist Family Movie Poster" />
+            </div>
+            <div class="details">
+                <h2>Tourist Family (2025)</h2>
+                <div class="info-grid">
+                    <div class="info-block">
+                        <strong>Cast</strong><br><br>
+                        John Smith as Father<br>
+                        Jane Doe as Mother<br>
+                        Emily and Michael as Children<br>
+                    </div>
+                    <div class="info-block">
+                        <strong>Roles</strong><br><br>
+                        <em>Father</em>: Protective and caring.<br>
+                        <em>Mother</em>: Supportive and nurturing.<br>
+                        <em>Children</em>: Adventurous siblings exploring new places.<br>
+                    </div>
+                    <div class="info-block">
+                        <strong>Summary</strong><br><br>
+                        A warm tale about a family vacation that tests bonds and uncovers hidden strengths. Filled with
+                        laughter, challenges, and heartfelt moments.
+                    </div>
+                    <div class="info-block">
+                        <strong>Reviews</strong><br><br>
+                        Viewers praise the authentic family dynamics and beautiful locations, though some mention the
+                        pacing could be smoother.<br>
+                        <em>IMDb & Rotten Tomatoes</em>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
